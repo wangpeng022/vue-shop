@@ -37,15 +37,17 @@
 
 <style scoped lang="less">
   li {
+
     position: relative;
     .img {
-      height: 150px;
+      /*height: 150px;*/
       width: 100%;
+      margin-top: -4px;
     }
     .mask {
       position: absolute;
-      bottom: 30px;
-      left: 30px;
+      bottom: 80px;
+      left: 50px;
       p{
         color: white;
       }

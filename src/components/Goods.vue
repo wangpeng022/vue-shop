@@ -29,10 +29,10 @@
     top: -2.5px;
     left: 0;
     font-size: 12px;
-    width: 100%;display: flex;background: #FFEFDB;
+    width: 100%;display: flex;background: #f1f1f1;
   li{
-    display: flex;color:	#8B8878;flex:1;flex-direction: column;justify-content: center;align-items: center;
-    color: lightgreen
+    display: flex;color:	black;flex:1;flex-direction: column;justify-content: center;align-items: center;
+    color: black
   }
   .router-link-active{
     text-shadow: 1px 1px 1px 		#00CD00;

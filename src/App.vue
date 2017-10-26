@@ -23,7 +23,7 @@ export default {
   .content{
     position: fixed;
     top:40px;
-    bottom: 50px;
+    bottom: 40px;
     left: 0;
     right: 0;overflow-y: scroll;
   }
