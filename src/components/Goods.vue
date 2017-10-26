@@ -32,6 +32,7 @@
     width: 100%;display: flex;background: #FFEFDB;
   li{
     display: flex;color:	#8B8878;flex:1;flex-direction: column;justify-content: center;align-items: center;
+    color: lightgreen
   }
   .router-link-active{
     text-shadow: 1px 1px 1px 		#00CD00;

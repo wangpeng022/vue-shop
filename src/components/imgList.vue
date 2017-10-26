@@ -1,42 +1,54 @@
 <template>
 
-      <ul class="list">
-      <li v-for="(h,index) in imgList">
+  <ul class="list">
+    <li v-for="(h,index) in imgList">
       <img :src="h" class="img">
-        <div>
-          <span>{{msg[index].Chinese}}</span>
-          <span>{{msg[index].English}}</span>
-        </div>
-      </li>
-      </ul>
+      <div class="mask">
+        <p>{{msg[index].Chinese}}</p>
+        <p>{{msg[index].English}}</p>
+      </div>
+    </li>
+  </ul>
 
 </template>
 
 <script>
-    export default {
-      props:['imgList'],
-        data() {
-            return {
-              msg: [
-                {Chinese:'餐厨',English:'Kitchen & tabletop'},
-                {Chinese:'家居',English:'Home decor'},
-                {Chinese:'园艺',English:'Garden'},
-                {Chinese:'配饰',English:'Accessories'},
-                {Chinese:'养护',English:'Care'}
-              ]
+  export default {
+    props: ['imgList'],
+    data() {
+      return {
+        msg: [
+          {Chinese: '餐 厨', English: 'Kitchen & tabletop'},
+          {Chinese: '家 居', English: 'Home decor'},
+          {Chinese: '园 艺', English: 'Garden'},
+          {Chinese: '配 饰', English: 'Accessories'},
+          {Chinese: '养 护', English: 'Care'}
+        ]
 
-            }
-        },
-        created() {
-        },
-        methods: {},
-        computed: {},
-        components: {}
-    }
+      }
+    },
+    created() {
+    },
+    methods: {},
+    computed: {},
+    components: {}
+  }
 </script>
 
-<style scoped>
-  .img{
-    height: 150px;
-    width: 100%;}
+<style scoped lang="less">
+  li {
+    position: relative;
+    .img {
+      height: 150px;
+      width: 100%;
+    }
+    .mask {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      p{
+        color: white;
+      }
+    }
+  }
 </style>
