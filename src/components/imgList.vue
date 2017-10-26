@@ -3,8 +3,10 @@
       <ul class="list">
       <li v-for="(h,index) in imgList">
       <img :src="h" class="img">
+        <div>
           <span>{{msg[index].Chinese}}</span>
           <span>{{msg[index].English}}</span>
+        </div>
       </li>
       </ul>
 

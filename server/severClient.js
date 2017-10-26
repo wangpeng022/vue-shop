@@ -18,7 +18,7 @@ http.createServer(function (req,res) {
     res.end(JSON.stringify(imgList));
 
   }
-}).listen(3003);
+}).listen(8009);
 
 
 // else if(pathname==='/api/hot'){
