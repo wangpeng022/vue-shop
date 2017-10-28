@@ -2,7 +2,9 @@
   <ul>
     <router-link to="/home" tag="li"><i class="iconfont icon-home1"></i>首页</router-link>
     <router-link to="/list" tag="li"><i class="iconfont icon-baoxiang"></i>爱淘</router-link>
-    <router-link to="/collect" tag="li"><i class="iconfont icon-wode"></i>我的账号</router-link>
+
+    <router-link to="/account" tag="li"><i class="iconfont icon-yduiweixin"></i>我的账号</router-link>
+
     <router-link to="/add" tag="li"><i class="iconfont icon-iconfontgengduo2"></i>我的订单</router-link>
   </ul>
 </template>
