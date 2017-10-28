@@ -2,7 +2,7 @@
     <div>
       <div class="item">
         <h3>用户名：</h3>
-        <input type="text" id="userName" placeholder="请填写您的真实姓名">
+        <input type="text" id="userName" placeholder="请填写您的真实姓名" >
         <span id="spanName"></span>
       </div>
       <div class="item">
@@ -70,7 +70,8 @@
   input{
     height: 30px;
     width: 200px;
-
+    outline:none;
+    border-style: none;
   }
 
 </style>

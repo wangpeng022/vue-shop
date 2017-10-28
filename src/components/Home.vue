@@ -39,7 +39,6 @@
             axios.get('/api/imgList').then(res=>{
               this.imgList=res.data;
               this.isLoading=false;
-              console.log(9);
 
             })
           }

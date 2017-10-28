@@ -42,7 +42,7 @@
     .img {
       /*height: 150px;*/
       width: 100%;
-      margin-top: -4px;
+      margin-top: -6px;
     }
     .mask {
       position: absolute;
