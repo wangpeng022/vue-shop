@@ -2,7 +2,7 @@
   <ul>
     <router-link to="/home" tag="li">
       <div ref="huzi">
-        <img src="http://img.qq1234.org/uploads/allimg/140827/10050MU3-4.jpg" alt="" width="80%" @touchstart="start">
+        <img src="http://img.qq1234.org/uploads/allimg/140827/10050MU3-4.jpg" alt="" width="80%" @click="start">
       </div>
       <i class="iconfont icon-home1"></i>首页</router-link>
     <router-link to="/list" tag="li"><i class="iconfont icon-baibaoxiang"></i>爱淘</router-link>

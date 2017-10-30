@@ -5,12 +5,11 @@
     <div class=" kt kt3"></div>
     <div class="titl">登录 Login</div>
     <div class="item">
-
       <span>用户名：</span> <input type="text" ref="userName" placeholder="请填写您的真实姓名或者手机号码" v-model="form.name">
-      <div v-show="btn&&!form.name">用户名不能为空</div>
+      <div v-show="btn&&!form.name" class="warn1">用户名不能为空</div>
       <br/>
       <span>-密码-  ： </span><input type="password" ref="userPass" placeholder="由6~12位数字和字母组成"  v-model="form.password">
-      <div v-show="btn&&!form.password">密码不能为空</div>
+      <div v-show="btn&&!form.password" class="warn2">密码不能为空</div>
     </div>
     <div class="submit">
     <a href="javascript:;"  ref="submit" @click="getLogin">确认登录</a>
@@ -85,8 +84,24 @@
     left: 330px;
   }
   .item{
+    position: relative;
     margin-top: 80px;
   }
+  .item .warn1{
+    position: absolute;
+    top:85px;
+    left: 50%;
+    color: #ff433f;
+    font-size: 14px;
+  }
+  .item .warn2{
+    position: absolute;
+    top:165px;
+    left: 50%;
+    color: #ff433f;
+    font-size: 14px;
+  }
+
   .submit {
     width: 160px;
     height: 40px;
