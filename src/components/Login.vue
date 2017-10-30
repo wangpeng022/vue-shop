@@ -5,39 +5,42 @@
     <div class=" kt kt3"></div>
     <div class="titl">登录 Login</div>
     <div class="item">
-      <span>用户名：</span> <input type="text" ref="userName" placeholder="请填写您的真实姓名或者手机号码">
+
+      <span>用户名：</span> <input type="text" ref="userName" placeholder="请填写您的真实姓名或者手机号码" v-model="form.name">
+      <div v-show="btn&&!form.name">用户名不能为空</div>
       <br/>
-      <span>-密码-  ： </span><input type="password" ref="userPass" placeholder="由6~12位数字和字母组成">
+      <span>-密码-  ： </span><input type="password" ref="userPass" placeholder="由6~12位数字和字母组成"  v-model="form.password">
+      <div v-show="btn&&!form.password">密码不能为空</div>
     </div>
     <div class="submit">
-    <a href="javascript:;"  ref="submit" @click="submit">确认登录</a>
+    <a href="javascript:;"  ref="submit" @click="getLogin">确认登录</a>
     </div>
   </div>
 </template>
 
 <script>
-  import axios from 'axios';
-
+//  import axios from 'axios';
+  import {mapActions} from 'vuex';
+  import {USER_SIGNIN} from '../vuex/users';
   export default {
     data() {
-      return {msg: []}
-    },
-    created() {
-      this.getLogin();
-
-    },
-    methods: {
-      getLogin() {
-        axios.post('/api/login').then(res => {
-          this.msg = res.data;
-        })
-      },
-      submit() {
-        if (!this.msg.length) {
-          this.$router.push('/home');
+      return {
+        btn:false,//true 经已提交过了  false还没提交
+        form:{
+          name:'',
+          password:''
         }
-        alert('登入失败，请重新登入')
       }
+    },
+    created() {},
+    methods: {
+      ...mapActions([USER_SIGNIN]),
+      getLogin() {
+        this.btn=true;
+        if(!this.form.name||!this.form.password)return;
+        this.USER_SIGNIN(this.form);
+        this.$router.push('/home');
+      },
     },
     computed: {},
     components: {}

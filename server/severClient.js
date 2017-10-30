@@ -73,7 +73,7 @@ http.createServer(function (req,res) {
         break;
     }
   }
-}).listen(8009);
+}).listen(8070);
 
 
 // else if(pathname==='/api/hot'){

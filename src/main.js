@@ -17,10 +17,13 @@ Vue.use(VueLazyload, {
   loading: 'http://cdn.uehtml.com/201402/1392662520296_1140x0.gif',
   attempt: 1
 });
+
+import  store from './vuex';
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
