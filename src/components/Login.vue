@@ -14,6 +14,7 @@
     <div class="submit">
     <a href="javascript:;"  ref="submit" @click="getLogin">确认登录</a>
     </div>
+    <span style="color:white" @click="goto">注册</span>
   </div>
 </template>
 
@@ -40,6 +41,9 @@
         this.USER_SIGNIN(this.form);
         this.$router.push('/home');
       },
+      goto(){
+        this.$router.push('/register')
+      }
     },
     computed: {},
     components: {}
@@ -107,7 +111,7 @@
     height: 40px;
     line-height: 40px;
     background: #ffb790;
-    margin: 50px auto;
+    margin: 20px auto;
     border-radius: 20px;
   }
   .submit a{
