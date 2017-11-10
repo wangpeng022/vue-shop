@@ -119,7 +119,8 @@
   }
 
   input {
-    height: 50px;
+    font-size: 18px;
+    height: 30px;
     width: 200px;
     margin-top: 30px;
     border-style: none;

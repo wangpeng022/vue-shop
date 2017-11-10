@@ -31,7 +31,7 @@
   export default {
     data() {
       return {
-        sex:"man",
+        sex: "man",
         registerInfo: {
           name: '',
           phone: '',
@@ -63,13 +63,14 @@
 <style scoped lang="less">
   .container {
 
-    background: url("http://cdn.duitang.com/uploads/item/201401/26/20140126231112_z5hrH.jpeg") no-repeat;
+    background:-webkit-gradient(linear, left top, 0 bottom, from(#ffa382), to(#9becff));
     background-size: 100%;
     padding: 30% 10px;
     font-size: 18px;
     text-align: center;
+    color: white;
     .item {
-      height:70px;
+      height: 70px;
 
     }
     .submit {
@@ -79,7 +80,7 @@
       color: white;
       text-align: center;
       line-height: 40px;
-      background: #ffb790;
+      background: #83f6ff;
       margin: 80px auto;
       border-radius: 20px;
     }
@@ -87,13 +88,14 @@
 
   input {
     font-size: 18px;
-    height: 50px;
+    color: white;
+    height: 30px;
     width: 200px;
     margin-top: 30px;
     border-style: none;
     outline: none;
     border-bottom: 1px solid white;
-    background:rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
   }
 
 </style>
